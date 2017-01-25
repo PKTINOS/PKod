@@ -26,7 +26,7 @@ An esoteric language, that only allows storing in a single double value. With VB
 
     =a-+oiz
     
-> Sets value as a, removes one from value (value is now char code of Z) then adds one, outputs char loops until value is z
+> Sets value as a, removes one from value to make first loop iteration valid, and then loops between +o until value reaches z
 
 ##### Print all numbers from 0 to 100
 
