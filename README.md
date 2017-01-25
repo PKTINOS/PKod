@@ -22,8 +22,20 @@ An esoteric language, that only allows storing in a single double value. With VB
  - \- Remove 1 from value
 
 ## Example code
-Print all letters from a to z
+##### Print all letters from a to z
 
     =a-+oiz
     
 > Sets value as a, removes one from value (value is now char code of Z) then adds one, outputs char loops until value is z
+
+##### Print all numbers from 0 to 100
+
+    +nid
+
+> Loops + and n until value is d (which has char code of 100)
+
+##### Print a bunch of random characters, forever
+
+    roiz
+    
+> Loops r and o until value is z. Value never reaches z, because after r we have o, thus "o-1" or "n" is the max symbol ever reached, which is before z
