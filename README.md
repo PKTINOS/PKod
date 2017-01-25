@@ -24,7 +24,8 @@ An esoteric language, that only allows storing just a single number.
  - j  Take input of a char, set it as value
  - +  Add 1 to value
  - \- Remove 1 from value
-
+ - !  Sleep thread for value * 1000
+ - z# Jump back to the start if value isnt #
 ## Example code
 ##### Print all letters from a to z
 
