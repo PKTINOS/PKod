@@ -29,7 +29,7 @@ An esoteric language, that only allows storing just a single number.
 ## Example code
 ##### Print all letters from a to z
 
-    =a-+oiz
+     =a-+oiz
     
 > Sets value as a, removes one from value to make first loop iteration valid, and then loops between +o until value reaches z
 
