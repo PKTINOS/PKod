@@ -2,9 +2,12 @@
 An esoteric language, that only allows storing just a single number.
 
 ## Documentation
-(Note: for documentation, # will represent ascii char code for next char in PKod code)\n
-(Note2: when next char is used, next char is ignored / jumped over in the code)\n
-(Note3: "value" is reffering to the only data type you can read/store to in PKod)\n
+(Note: for documentation, # will represent ascii char code for next char in PKod code)
+
+(Note2: when next char is used, next char is ignored / jumped over in the code)
+
+(Note3: "value" is reffering to the only data type you can read/store to in PKod)
+
 
  - =# Sets value as #
  - r# Sets value as random number between 0 and # minus 1
