@@ -1,5 +1,5 @@
 # PKod
-An esoteric language, that only allows storing in a single double value. With VB.NET interpretor.
+An esoteric language, that only allows storing just a single number.
 
 ## Documentation
 (Note: for documentation, # will represent ascii char code for next char in PKod code)
