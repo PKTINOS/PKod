@@ -104,6 +104,15 @@ Module Module1
             ElseIf (c = "-"c) Then
                 'Removes 1 from value
                 myOnlyValue -= 1
+            ElseIf (c = "!") Then
+                'Sleep the thread for value * 1000 milliseconds
+                Threading.Thread.Sleep(Math.Round(myOnlyValue) * 1000)
+            ElseIf (c = "z"c) Then
+                'Jump to start if next char isnt equal with value
+                If (Asc(nextC) = Math.Round(myOnlyValue)) Then
+                    codePos = 0
+                End If
+            End If
             End If
         Catch ex As Exception
             Console.WriteLine(ex.ToString())
