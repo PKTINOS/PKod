@@ -109,8 +109,10 @@ Module Module1
                 Threading.Thread.Sleep(Math.Round(myOnlyValue) * 1000)
             ElseIf (c = "z"c) Then
                 'Jump to start if next char isnt equal with value
-                If (Asc(nextC) = Math.Round(myOnlyValue)) Then
+                If (Asc(nextC) <> Math.Round(myOnlyValue)) Then
                     codePos = 0
+                Else
+                    codePos += 1
                 End If
             End If
             End If
