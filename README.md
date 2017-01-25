@@ -39,3 +39,23 @@ An esoteric language, that only allows storing in a single double value. With VB
     roiz
     
 > Loops r and o until value is z. Value never reaches z, because after r we have o, thus "o-1" or "n" is the max symbol ever reached, which is before z
+
+##### Infinite loop
+
+    +-i0
+    
+> Any value works in the place of 0. Adds then removes 1 from the value. Value stays 0 after each iteration, thus you won't run out of memory any time soon
+
+##### Loop until certain key is pressed
+
+    j_i0
+
+> Any char can replace \_, and the certain key to be pressed is 0, which can be changed to whatever key you want to wait for
+
+##### Loop until any key is pressed
+
+    j
+    
+> Waits for any key, then continues
+
+
