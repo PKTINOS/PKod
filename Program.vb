@@ -98,6 +98,12 @@ Module Module1
             ElseIf (c = "j"c) Then
                 'Take input of a char, and set it as value
                 myOnlyValue = Asc(Console.ReadKey().KeyChar)
+             ElseIf (c = "+"c) Then
+                'Adds 1 to the value
+                myOnlyValue += 1
+            ElseIf (c = "-"c) Then
+                'Removes 1 from value
+                myOnlyValue -= 1
             End If
         Catch ex As Exception
             Console.WriteLine(ex.ToString())
