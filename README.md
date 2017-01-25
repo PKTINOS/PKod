@@ -20,3 +20,10 @@ An esoteric language, that only allows storing in a single double value. With VB
  - j  Take input of a char, set it as value
  - +  Add 1 to value
  - \- Remove 1 from value
+
+## Example code
+Print all letters from a to z
+
+    =a-+oiz
+    
+> Sets value as a, removes one from value (value is now char code of Z) then adds one, outputs char loops until value is z
