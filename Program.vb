@@ -110,7 +110,7 @@ Module Module1
             ElseIf (c = "z"c) Then
                 'Jump to start if next char isnt equal with value
                 If (Asc(nextC) <> Math.Round(myOnlyValue)) Then
-                    codePos = 0
+                    codePos = -1
                 Else
                     codePos += 1
                 End If
