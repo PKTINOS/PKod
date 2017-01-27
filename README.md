@@ -1,6 +1,8 @@
 # PKod
 An esoteric language, that only allows storing just a single number.
 
+Check out some code examples here: https://github.com/PKTINOS/PKod/blob/master/Code.md
+
 ## Documentation
 (Note: for documentation, # will represent ascii char code for next char in PKod code)
 
