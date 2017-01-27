@@ -194,7 +194,7 @@ Module Module1
                     Return
                 End If
             ElseIf (c = "g") Then
-                If (myOnlyValue = 0) Then
+                If (myOnlyValue <> 0) Then
                     codePos += 1
                     Return
                 End If
