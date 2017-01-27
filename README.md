@@ -35,6 +35,7 @@ An esoteric language, that only allows storing just a single number.
  - ;  Set value as Log(value) (base 10 logarithm of value)
  - :  Set value as sqrt(value) (value ^ 1/2)
  - (  Skip next char in code, if value is not a prime number
+ - \\  Skip next char in code, if value is a prime number
  - )  Set value as E^value
  - $  Skip next char if value is even
  - e# Try to parse # as integer, then set value as value * 10^int(#)
