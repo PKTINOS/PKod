@@ -193,6 +193,15 @@ Module Module1
                     codePos += 1
                     Return
                 End If
+            ElseIf (c = "g") Then
+                If (myOnlyValue = 0) Then
+                    codePos += 1
+                    Return
+                End If
+            ElseIf (c = "d") Then
+                If (myOnlyValue <> Integer.Parse(nextC)) Then
+                    codePos = -1
+                End If
             End If
 
         Catch ex As Exception
