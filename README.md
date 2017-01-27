@@ -46,3 +46,5 @@ An esoteric language, that only allows storing just a single number.
  - x  Output true if value is prime, else false
  - >  Skip next char
  - f  Set value as absolute(value)
+ - g  Skip next char if value isnt 0
+ - d  If value isnt int.parse(#), goto start
