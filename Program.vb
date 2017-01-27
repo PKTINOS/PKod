@@ -202,6 +202,10 @@ Module Module1
                 If (myOnlyValue <> Integer.Parse(nextC)) Then
                     codePos = -1
                 End If
+            ElseIf (c = "a") Then
+                myOnlyValue = myOnlyValue / Integer.Parse(nextC)
+                codePos += 1
+                Return
             End If
 
         Catch ex As Exception
