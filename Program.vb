@@ -188,6 +188,11 @@ Module Module1
                 Return
             ElseIf (c = "f") Then
                 myOnlyValue = Math.Abs(myOnlyValue)
+            ElseIf (c = "\") Then
+                If isPrime(Math.Round(myOnlyValue)) = True Then
+                    codePos += 1
+                    Return
+                End If
             End If
 
         Catch ex As Exception
