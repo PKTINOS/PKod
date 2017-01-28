@@ -13,10 +13,18 @@
 
     n?$}3$+a2d1n
     
-    
     Explanation: n? - Print value and new line
                  $}3 - If not even, run multipy (}). If multiply is ran, value is multiplied by 3. Else, since 3 means nothing, it does nothing
                  $+ - If not even, add one to value (thus if odd, 3n+1 part is done)
                  a2 - Divide by 2, thus (3n+1)/2 (iteration) is done)
                  d1 - Until value is 1
                  n - Print 1 to make output look complete
+
+#### Print letters from a to z
+
+    =a-+oiz
+    
+    Explanation: =a - set value as a
+                 -  - decrement value by 1
+                 +o - increment value by 1, and print value
+                 iz - loop two previous instructions until value is z
