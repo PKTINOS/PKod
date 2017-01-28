@@ -24,7 +24,7 @@ Check out some code examples here: https://github.com/PKTINOS/PKod/blob/master/C
  - ^# Xors value and #
  - %# Mods value by #
  - i# If value is not equal with #, it kicks you back two blocks in the code
- - j  Take input of a char, set it as value
+ - j  Take input of a char, set it as value *(version 1.1 and before)*
  - +  Add 1 to value
  - \- Remove 1 from value
  - !  Sleep thread for int.Parse(#) * 1000
