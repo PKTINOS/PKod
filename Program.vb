@@ -3,16 +3,15 @@ Module Module1
     Dim myOnlyValue As Double
     Dim codePos = 0
     Dim rand As New Random()
-    Sub Main()
-        Console.WriteLine("Interpreter for esoteric language PKod." + Environment.NewLine + "Language made by PKTINOS")
-        Console.WriteLine(Environment.NewLine + "Code: (Press enter to execute)")
+    Sub Main(ByVal args As String())
+        'Console.WriteLine("Interpreter for esoteric language PKod." + Environment.NewLine + "Language made by PKTINOS")
+        'Console.WriteLine(Environment.NewLine + "Code: (Press enter to execute)")
         codePos = 0
-        myOnlyValue = 0
-        Dim code As String = Console.ReadLine
-        Execute(code)
+        Integer.TryParse(args(1), myOnlyValue)
+        Execute(args(0))
     End Sub
     Sub Execute(ByVal code As String)
-        Console.WriteLine("Output:")
+        'Console.WriteLine("Output:")
         Try
             Do While codePos <= code.Length - 1
                 If (codePos = code.Length - 1) Then
@@ -27,13 +26,13 @@ Module Module1
                 End If
             Loop
 
-            Console.WriteLine()
-            Console.WriteLine()
-            Console.WriteLine("All of the code was executed")
-            Console.WriteLine()
-            Console.ReadLine()
-            Console.Clear()
-            Main()
+            'Console.WriteLine()
+            'Console.WriteLine()
+            'Console.WriteLine("All of the code was executed")
+            'Console.WriteLine()
+            'Console.ReadLine()
+            'Console.Clear()
+            'Main()
         Catch ex As Exception
             Console.WriteLine(ex.ToString())
         End Try
@@ -105,7 +104,7 @@ Module Module1
                 End If
             ElseIf (c = "j"c) Then
                 'Take input of a char, and set it as value
-                myOnlyValue = Asc(Console.ReadKey().KeyChar)
+                'myOnlyValue = Asc(Console.ReadKey().KeyChar)
             ElseIf (c = "+"c) Then
                 'Adds 1 to the value
                 myOnlyValue += 1
