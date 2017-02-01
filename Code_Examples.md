@@ -5,7 +5,7 @@
     n?$}3$+a2d1n
     
     Explanation: n? - Print value and new line
-                 $}3 - If not even, run multipy (}). If multiply is ran, value is multiplied by 3. Else, since 3 means nothing, it does nothing
+                 $}3 - If not even, run multiply (}). If multiply is ran, value is multiplied by 3. Else, since 3 means nothing, it does nothing
                  $+ - If not even, add one to value (thus if odd, 3n+1 part is done)
                  a2 - Divide by 2, thus (3n+1)/2 (iteration) is done)
                  d1 - Until value is 1
