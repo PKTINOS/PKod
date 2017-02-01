@@ -52,7 +52,7 @@ Check out some code examples here: https://github.com/PKTINOS/PKod/blob/master/C
  - d  If value isnt int.parse(#), goto start
  - a  Divide value by int.Parse(#)
  - @  Loop all code behind itself, for int.Parse(#) times. Meant to exist once in code. If two are met, you might enter an infinite loop
- - l  Clear the console
+ - l  Clear the console. If it's the first character in the code, turn on printing NOP chars.
  - y  Sleep for a quarter of a second
  - w  Append a backspace character to the console. AKA remove last char.
 
