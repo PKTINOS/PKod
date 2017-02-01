@@ -2,6 +2,8 @@ Module Module1
 
     Dim myOnlyValue As Double
     Dim codePos = 0
+    Dim loopAmount = 1
+    Dim loopIncrement = 0
     Dim rand As New Random()
     Sub Main(ByVal args As String())
         'Console.WriteLine("Interpreter for esoteric language PKod." + Environment.NewLine + "Language made by PKTINOS")
@@ -9,6 +11,7 @@ Module Module1
         codePos = 0
         Integer.TryParse(args(1), myOnlyValue)
         Execute(args(0))
+
     End Sub
     Sub Execute(ByVal code As String)
         'Console.WriteLine("Output:")
@@ -26,7 +29,7 @@ Module Module1
                 End If
             Loop
 
-            'Console.WriteLine()
+            Console.WriteLine()
             'Console.WriteLine()
             'Console.WriteLine("All of the code was executed")
             'Console.WriteLine()
@@ -112,8 +115,9 @@ Module Module1
                 'Removes 1 from value
                 myOnlyValue -= 1
             ElseIf (c = "!") Then
-                'Sleep the thread for next char*1000
+                'Sleep the thread for next chars int * 1000
                 Threading.Thread.Sleep(Integer.Parse(nextC) * 1000)
+                codePos += 1
             ElseIf (c = "z"c) Then
                 'Jump to start if next char isnt equal with value
                 If (Asc(nextC) <> Math.Round(myOnlyValue)) Then
@@ -205,6 +209,28 @@ Module Module1
                 myOnlyValue = myOnlyValue / Integer.Parse(nextC)
                 codePos += 1
                 Return
+            ElseIf (c = "@") Then
+                If loopIncrement = loopAmount Then
+                    codePos += 1
+                    loopAmount = 1
+                    loopIncrement = 0
+                    Return
+                End If
+                If loopIncrement <= loopAmount Then
+                    If loopAmount <> Integer.Parse(nextC) Then
+                        loopAmount = Integer.Parse(nextC)
+                    End If
+                    loopIncrement += 1
+                    codePos = -1
+                End If
+            ElseIf (c = "l") Then
+                Console.Clear()
+            ElseIf (c = "y") Then
+                Threading.Thread.Sleep(250)
+            ElseIf (c = "w") Then
+                Console.Write(vbBack)
+            Else
+                Console.Write(c)
             End If
 
         Catch ex As Exception
