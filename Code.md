@@ -32,5 +32,13 @@
 #### [Loading... Forever][1]
 
     lL=oo=ao=do=io=no=go=.ooo =|oyw=/oyw=-oyw=\oywl<
+    
+    Explanation: l - Clear screen
+                 L - NOP, thus print "L"
+                 =oo=ao=do=io=no=go=.ooo - Set as certain chars and print them.
+                 (space) - Another NOP, thus print a space
+                 =|oyw - Set char as "|", print it, then wait a quarter of a second and remove it
+                 =/oyw=-oyw=\oywl - Same as above, with different symbols to match the challenge
+                 < - Go back to the start
 
 [1]:http://codegolf.stackexchange.com/questions/101289/loading-forever
