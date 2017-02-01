@@ -51,3 +51,9 @@ Check out some code examples here: https://github.com/PKTINOS/PKod/blob/master/C
  - g  Skip next char if value isnt 0
  - d  If value isnt int.parse(#), goto start
  - a  Divide value by int.Parse(#)
+ - @  Loop all code behind itself, for int.Parse(#) times. Meant to exist once in code. If two are met, you might enter an infinite loop
+ - l  Clear the console
+ - y  Sleep for a quarter of a second
+ - w  Append a backspace character to the console. AKA remove last char.
+
+New feature: Any symbols that are not code (no-op's), will simply be printed in the output
