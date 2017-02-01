@@ -31,7 +31,7 @@
 
     lL=oo=ao=do=io=no=go=.ooo =|oyw=/oyw=-oyw=\oywl<
     
-    Explanation: l - Clear screen
+    Explanation: l - Clear screen and since its the first char, allow printing no operation (NOP) chars
                  L - NOP, thus print "L"
                  =oo=ao=do=io=no=go=.ooo - Set as certain chars and print them.
                  (space) - Another NOP, thus print a space
