@@ -3,14 +3,15 @@ Module Module1
     Dim myOnlyValue As Double
     Dim codePos = 0
     Dim loopAmount = 1
+    Dim writeNOPS As Boolean = False
     Dim loopIncrement = 0
     Dim rand As New Random()
     Sub Main(ByVal args As String())
         'Console.WriteLine("Interpreter for esoteric language PKod." + Environment.NewLine + "Language made by PKTINOS")
         'Console.WriteLine(Environment.NewLine + "Code: (Press enter to execute)")
         codePos = 0
-        Integer.TryParse(args(1), myOnlyValue)
-        Execute(args(0))
+        'Integer.TryParse(args(1), myOnlyValue)
+        Execute(Console.ReadLine)
 
     End Sub
     Sub Execute(ByVal code As String)
@@ -225,12 +226,18 @@ Module Module1
                 End If
             ElseIf (c = "l") Then
                 Console.Clear()
+                If codePos = 0 Then
+                    writeNOPS = True
+                End If
             ElseIf (c = "y") Then
                 Threading.Thread.Sleep(250)
             ElseIf (c = "w") Then
                 Console.Write(vbBack)
             Else
-                Console.Write(c)
+                If writeNOPS Then
+                    Console.Write(c)
+                End If
+
             End If
 
         Catch ex As Exception
