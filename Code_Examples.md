@@ -1,14 +1,5 @@
 # Code examples / sample programs
 
-#### Find closest bigger prime
-    n\+\iÿ?n
-
-    Explanation: n - Print value (will print input)
-                 \+ - Skip if number is prime (at that point, it just checks if input is prime), and add 1 to value
-                 \i - Skip if number is prime, else go back two blocks (and iterate +\i again, till value is prime)
-                 ÿ  - Maximum ascii value, of 0xFF or 255 - This means it will check up to 255
-                 ?n - Print new line and number (if this is reached, number is prime, so print it)
-
 #### Collatz Conjecture
 
     n?$}3$+a2d1n
