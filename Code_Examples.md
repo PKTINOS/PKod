@@ -1,5 +1,12 @@
 # Code examples / sample programs
 
+#### Find next prime
+
+    +\<n
+
+    Explanation: +\< - Add to value until number is prime (increment check_if_prime(true->skip next char false->loop))
+                 n - Print value
+
 #### Collatz Conjecture
 
     n?$}3$+a2d1n
