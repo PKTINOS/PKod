@@ -10,8 +10,8 @@ Module Module1
         'Console.WriteLine("Interpreter for esoteric language PKod." + Environment.NewLine + "Language made by PKTINOS")
         'Console.WriteLine(Environment.NewLine + "Code: (Press enter to execute)")
         codePos = 0
-        'Integer.TryParse(args(1), myOnlyValue)
-        Execute(Console.ReadLine)
+        Integer.TryParse(args(1), myOnlyValue)
+        Execute(args(0))
 
     End Sub
     Sub Execute(ByVal code As String)
