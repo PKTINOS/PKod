@@ -28,3 +28,9 @@
                  -  - decrement value by 1
                  +o - increment value by 1, and print value
                  iz - loop two previous instructions until value is z
+
+#### [Loading... Forever][1]
+
+    lL=oo=ao=do=io=no=go=.ooo =|oyw=/oyw=-oyw=\oywl<
+
+[1]:http://codegolf.stackexchange.com/questions/101289/loading-forever
