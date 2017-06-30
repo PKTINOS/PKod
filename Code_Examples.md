@@ -56,3 +56,13 @@
                  < - go back to the start of the code
 
 [2]:https://codegolf.stackexchange.com/questions/105323/blinking-twelve
+
+#### [Three-Three-Three][3]
+    
+     sonsonson
+     
+     Explanation: s - add next char to value
+                  o - this char's ascii number will be added (ascii number = 111)
+                  n - print numeric value of the variable
+                  
+[3]:https://codegolf.stackexchange.com/questions/108133/three-three-three/
