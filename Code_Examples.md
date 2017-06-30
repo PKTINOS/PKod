@@ -45,14 +45,14 @@
 
     l12=:o00yyl=-oo=:o=-ooyy<
 
-    Explanation:
-    l - if first char in code, print any NOP chars found
-    12 - two NOP chars to print
-    =: - set variable as :
-    o - print variable's corresponding ascii char
-    y - wait 0.25 seconds
-    l - if not first char in code, clear the console
-    =-oo - set variable as - and print twice
-    < - go back to the start of the code
+    Explanation: l - if first char in code, print any NOP chars found
+                 12 - two NOP chars to print
+                 =: - set variable as :
+                 o - print variable's corresponding ascii char
+                 00 - two more NOP chars to print
+                 y - wait 0.25 seconds
+                 l - if not first char in code, clear the console
+                 =-oo - set variable as - and print twice
+                 < - go back to the start of the code
 
 [2]:https://codegolf.stackexchange.com/questions/105323/blinking-twelve
