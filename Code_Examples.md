@@ -40,3 +40,19 @@
                  < - Go back to the start
 
 [1]:http://codegolf.stackexchange.com/questions/101289/loading-forever
+
+#### [Blinking twelve][2]
+
+    l12=:o00yyl=-oo=:o=-ooyy<
+
+    Explanation:
+    l - if first char in code, print any NOP chars found
+    12 - two NOP chars to print
+    =: - set variable as :
+    o - print variable's corresponding ascii char
+    y - wait 0.25 seconds
+    l - if not first char in code, clear the console
+    =-oo - set variable as - and print twice
+    < - go back to the start of the code
+
+[2]:https://codegolf.stackexchange.com/questions/105323/blinking-twelve
